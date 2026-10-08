@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk - Kasir & Stok</title>
+    <link rel="stylesheet" href="assets/css/produk.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <b>Kasir & Stok</b>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="produk.html" class="on">Produk</a>
+      <a href="index.html">Logout</a>
+      <span id="clock" class="clock"></span>
+    </nav>
+
+    <main class="wrap">
+      <h1>Produk</h1>
+      <p class="sub">Kelola daftar produk dan stok.</p>
+
+      <div class="bar">
+        <input type="search" id="cari" placeholder="Cari produk" aria-label="Cari produk" />
+        <a href="produk-form.html" class="btn">Tambah produk</a>
+      </div>
+
+      <section class="card">
+        <div class="scroll">
+          <table id="tabel">
+            <thead>
+              <tr>
+                <th>Kode</th>
+                <th>Nama</th>
+                <th>Kategori</th>
+                <th>Harga</th>
+                <th>Stok</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>P001</td>
+                <td>Air mineral 600 ml</td>
+                <td>Minuman</td>
+                <td>Rp 4.000</td>
+                <td>120</td>
+                <td>
+                  <a class="btn alt" href="produk-form.html">Edit</a>
+                  <button class="btn alt bad" data-hapus="Air mineral 600 ml">Hapus</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div id="kosong" class="kosong" hidden>Produk tidak ditemukan. Coba kata kunci lain.</div>
+        
+        <div class="pager">
+          <button class="btn alt" disabled>Back</button>
+          <button class="btn alt">Next</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

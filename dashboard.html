@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Kasir & Stok</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <b>Kasir & Stok</b>
+      <a href="dashboard.html" class="on">Dashboard</a>
+      <a href="produk.html">Produk</a>
+      <a href="index.html">Logout</a>
+      <span id="clock" class="clock"></span>
+    </nav>
+
+    <main class="wrap">
+      <h1>Dashboard</h1>
+      <p class="sub">Ringkasan toko hari ini.</p>
+
+      <section class="stats">
+        <div class="card">
+          <strong>0</strong>
+          <span>Jumlah produk</span>
+        </div>
+        <div class="card">
+          <strong>0</strong>
+          <span>Stok tersedia</span>
+        </div>
+        <div class="card">
+          <strong>0</strong>
+          <span>Transaksi hari ini</span>
+        </div>
+        <div class="card">
+          <strong>Rp 0</strong>
+          <span>Total penjualan hari ini</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Stok menipis</h2>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Produk</th>
+                <th>Sisa stok</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

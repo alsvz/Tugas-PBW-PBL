@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Produk - Kasir & Stok</title>
+    <link rel="stylesheet" href="assets/css/produk-form.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <b>Kasir & Stok</b>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="produk.html" class="on">Produk</a>
+      <a href="index.html">Logout</a>
+      <span id="clock" class="clock"></span>
+    </nav>
+
+    <main class="wrap">
+      <h1>Tambah produk</h1>
+      <p class="sub">Isi data produk, lalu simpan.</p>
+
+      <form id="form-produk" class="card form">
+        <label for="nama">Nama produk</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="kategori">Kategori</label>
+        <select id="kategori" name="kategori" required>
+          <option value="">Pilih kategori</option>
+          <option>Makanan</option>
+          <option>Minuman</option>
+          <option>Alat tulis</option>
+        </select>
+
+        <label for="harga">Harga (Rp)</label>
+        <input type="number" id="harga" name="harga" required />
+        
+        <label for="stok">Stok</label>
+        <input type="number" id="stok" name="stok" required />
+
+        <!-- ========================================== -->
+        <!-- TAMBAHKAN KODE INPUT GAMBAR DI SINI        -->
+        <!-- ========================================== -->
+        <label>Foto Produk</label>
+        <label class="img-upload-area">
+          <span>Klik di sini untuk memilih gambar</span>
+          <input type="file" accept="image/*" />
+          <img class="img-preview" src="" alt="Pratinjau" />
+        </label>
+        <!-- ========================================== -->
+
+        <button type="submit" class="btn">Simpan produk</button>
+        <a href="produk.html" class="btn alt">Batal</a>
+        <p id="pesan" class="pesan" role="status"></p>
+      </form>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
